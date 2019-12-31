@@ -1,5 +1,7 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
+        if len(s)!=len(t):
+            return False
         d1 = [0 for _ in range(26)]
         d2 = [0 for _ in range(26)]
         for i in s:
